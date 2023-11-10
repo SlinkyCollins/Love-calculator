@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    overflow: hidden;
+    background-image: url(image\ 2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    text-align: center;
+    /* height: 100vh; */
+    margin-top: 180px;
+    color: white;
+}
+
+
+p {
+    margin-top: 20px;
+}
+
+.input-container input {
+    outline: none;
+    padding: 5px;
+    margin: 50px 0px 0px 0px;
+}
+
+.input-container button {
+    outline: none;
+    padding: 5px;
+    background-color: darkorchid;
+}
+
+#result {
+    margin: 40px auto 0px auto;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 10px;
+    width:fit-content;
+    backdrop-filter: blur(15px);
+}
+
+#showError {
+    background-color: red;
+}
