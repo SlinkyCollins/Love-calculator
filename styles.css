@@ -31,6 +31,7 @@ body {
     /* margin: 0 auto;
     margin-top: 40px; */
     border-radius: 10px;
+    overflow: hidden;
 
     
 }
@@ -56,8 +57,9 @@ p {
     padding: 5px;
     width: 70px;
     height: 30px;
-    background-color: darkorchid;
+    background-color: rgb(195, 121, 232);
     border-radius: 5px;
+    cursor: pointer;
 
 
     /* width: 150px;
@@ -71,6 +73,7 @@ p {
 .input-container button:hover {
     color: white;
     background-color: pink;
+    transition: background-color color 0.4s ease;
 }
 
 #result {
@@ -89,13 +92,22 @@ p {
 }
 
 @media screen and (max-width: 480px) {
-    #result {
-        width: 100%;
-    }
-
     .container {
         margin: 0 auto;
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-left: 6px;
+        margin-right: 8px;
+        overflow: auto;
+    }
+
+    .container::-webkit-scrollbar {
+        width: 0.5em;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    #showError {
+        font-size: 12px;
     }
 }

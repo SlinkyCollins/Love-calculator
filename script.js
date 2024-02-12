@@ -19,17 +19,17 @@ function calculateLove() {
   } else if (val >= 0 && val < 30) {
     result.innerHTML = `<p>${Math.round(rando)}%</p>
             <br/>
-            <h1>You should become the opposite of lovers!😂</h1>`;
+            <h1>You guys should become the opposite of lovers!😂</h1>`;
     showError.innerHTML = "";
   } else if (val >= 30 && val < 50) {
     result.innerHTML = `<p>${Math.round(rando)}%</p>
           <br/>
-            <h1>I hate to break it to you but your love compatibility has to come in another dimension 🤦‍♂️</h1>`;
+            <h1 style="font-size:23px;">I hate to break it to you but your love compatibility has to come in another dimension 🤦‍♂️</h1>`;
     showError.innerHTML = "";
   } else if (val >= 50 && val < 65) {
     result.innerHTML = `<p>${Math.round(rando)}%</p>
           <br/>
-            <h1>I'm sorry my gee, the chance of this working out is pretty low!🤷‍♂️</h1>`;
+            <h1>I'm sorry ma gee, the chance of this working out is pretty low!🤷‍♂️</h1>`;
     showError.innerHTML = "";
   } else if (val >= 65 && val < 80) {
     result.innerHTML = `<p>${Math.round(rando)}%</p>
