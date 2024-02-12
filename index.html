@@ -8,58 +8,21 @@
   </head>
   <body>
     <div class="container">
-      <div id="showError"></div>
+      <div id="showError"></div> 
       <h1>💖Love Calculator💖</h1>
       <p>Let's see if you're compatible with your love or your crush🌹🥰</p>
       <div class="input-container">
-            <input type="text" placeholder="First Person" id="firstPerson" />
-            <span>🔗</span>
-            <input type="text" placeholder="Second Person" id="secondPerson" />
-            <button onclick="pair()">Pair</button>
+            <input type="text" placeholder="Your Name" id="firstPerson" />
+            <p>🔗</p>
+            <input type="text" placeholder="Crush's Name" id="secondPerson" />
+            <button id="calculate">Pair</button>
       </div>
+      <h2 id="result-message"></h2>
       <div id="result">Check Result here!</div>
     </div>
 
-    <script>
-      let rando = Math.random() * 100;
-      let val = Math.round(rando);
+    
 
-      const pair = () => {
-        if (firstPerson.value == "" && secondPerson.value == "" ||firstPerson.value == "" || secondPerson.value == "") {
-            showError.innerHTML = "Input(s) cannot be empty";
-        } else if (val >= 0 && val < 30){
-            result.innerHTML = `<p>${Math.round(rando)}%</p>
-            <h1>You should become the opposite of lovers!😂</h1>`;
-            firstPerson.value = "";
-            secondPerson.value = ""; 
-            showError.innerHTML = "";
-        } else if (val >= 30 && val < 50) {
-          result.innerHTML = `<p>${Math.round(rando)}%</p>
-            <h1>I hate to break it to you but your love compatibility has to come in another dimension 🤦‍♂️</h1>`;
-            firstPerson.value = "";
-            secondPerson.value = ""; 
-            showError.innerHTML = "";
-        } else if (val >= 50 && val < 65){
-          result.innerHTML = `<p>${Math.round(rando)}%</p>
-            <h1>I'm sorry my gee, the chance of this working out is pretty low!🤷‍♂️</h1>`;
-            firstPerson.value = "";
-            secondPerson.value = ""; 
-            showError.innerHTML = "";
-        } else if (val >= 65 && val < 80){
-          result.innerHTML = `<p>${Math.round(rando)}%</p>
-            <h1>Well, i gotta say "Not bad", you can go on🥰❣</h1>`;
-            firstPerson.value = "";
-            secondPerson.value = ""; 
-            showError.innerHTML = "";
-        } else if (val >= 80 && val <= 100){
-          result.innerHTML = `<p>${Math.round(rando)}%</p>
-            <h1>If you don't marry each other, i go wipe you cord for neckkk!🤩😂❤</h1>`;
-            firstPerson.value = "";
-            secondPerson.value = ""; 
-            showError.innerHTML = "";
-        } 
-      };
-
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

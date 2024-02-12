@@ -7,20 +7,38 @@
 body {
     font-family:Georgia, 'Times New Roman', Times, serif ;
     overflow: hidden;
-    background-image: url(image\ 2.jpg);
+    background-image: url(hearts.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .container {
-    text-align: center;
-    /* height: 100vh; */
+    /* text-align: center;
+    height: 100vh;
     margin-top: 180px;
-    color: white;
+    color: white; */
+
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    padding: 20px;
+    /* margin: 0 auto;
+    margin-top: 40px; */
+    border-radius: 10px;
+
+    
 }
 
+h2 {
+    font-size: 15px;
+    margin-top: 10px;
+}
 
 p {
     margin-top: 20px;
@@ -29,24 +47,55 @@ p {
 .input-container input {
     outline: none;
     padding: 5px;
-    margin: 50px 0px 0px 0px;
+    margin: 25px 0px 0px 0px;
 }
 
 .input-container button {
     outline: none;
+    border: none;
     padding: 5px;
+    width: 70px;
+    height: 30px;
     background-color: darkorchid;
+    border-radius: 5px;
+
+
+    /* width: 150px;
+    height: 30px;
+    background-color: pink;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px; */
+}
+.input-container button:hover {
+    color: white;
+    background-color: pink;
 }
 
 #result {
-    margin: 40px auto 0px auto;
-    border: 1px solid #fff;
+    margin: 15px auto 0px auto;
+    border: 1px solid grey;
     border-radius: 10px;
     padding: 10px;
     width:fit-content;
     backdrop-filter: blur(15px);
+    font-size: 11px;
 }
 
 #showError {
-    background-color: red;
+    color: red;
+    width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    #result {
+        width: 100%;
+    }
+
+    .container {
+        margin: 0 auto;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
 }
